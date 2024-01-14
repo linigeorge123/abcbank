@@ -8,6 +8,7 @@ use App\Http\Controllers\DepositController;
 use App\Http\Controllers\WithdrawController;
 use App\Http\Controllers\TransferController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\StatementController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,6 +42,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('transfer/store',[TransferController::class,'transfer'])->name('transfer.store');
 
     Route::get('logout', [LogoutController::class,'perform'])->name('logout.perform');
+    Route::get('statement',[StatementController::class,'index'])->name('statement');
 
 
 });

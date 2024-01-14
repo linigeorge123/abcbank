@@ -59,7 +59,7 @@
 
                 <div class="form-group">
                     <label>Amount</label>
-                    <input type="number" min="1" class="form-control" placeholder="Enter amount to deposit" name="deposit"  autofocus required>
+                    <input type="number" min="1" class="form-control" min="0"  step="0.25" placeholder="Enter amount to deposit" name="deposit"  autofocus required>
                 </div>
                 <br><button type="submit" class="btn">Deposit</button>
             </form>

@@ -124,11 +124,13 @@
                 <li><a href="{{ route('deposit') }}"><i class="fa fa-upload"></i> Deposit</a></li>
                 <li><a href="{{ route('withdraw') }}"><i class="fa fa-download"></i> Withdraw</a></li>
                 <li><a href="{{ route('transfer') }}"><i class="fa fa-exchange"></i> Transfer</a></li>
-                <li><a href=""><i class="fa fa-file-text-o"></i> Statement</a></li>
+                <li><a href="{{ route('statement') }}"><i class="fa fa-file-text-o"></i> Statement</a></li>
                 <li><a href="{{ route('logout.perform') }}"><i class="fa fa-sign-out"></i> Logout</a></li>
             </ul>
         </nav>
         <section>@yield('content')</section>
+        <section>@yield('js-script')</section>
+
     </body>
 
 </html>
