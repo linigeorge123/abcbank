@@ -18,6 +18,10 @@ class TransferController extends Controller
         $user = Auth::user()->id;
        
         $from = User::where('id',$user)->first();
+        if($from->email==$request->toEmail)
+        {
+            return redirect()->back()->with('error', "please enter another account!");
+        }
      
         $to = User::where('email',$request->toEmail)->first();
         

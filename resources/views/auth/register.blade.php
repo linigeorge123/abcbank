@@ -100,7 +100,7 @@
                     <input type="password" class="form-control" placeholder="password" id="password" name="password" value="" required>
                 </div>
                 <div class="form-group">
-                    <input type="checkbox" name="remember"> Agree the terms and policy
+                    <input type="checkbox" required name="remember"> Agree the terms and policy
                 </div>
                 <br><button type="submit" class="btn">Create new account</button>
             </form>
